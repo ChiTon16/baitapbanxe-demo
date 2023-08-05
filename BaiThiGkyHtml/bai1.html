@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt xe</title>
+    <link rel="stylesheet" href="/CSS/bai1.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            BÀI THI ỨNG DỤNG WEB
+        </div>
+
+        <div class="MSSV">
+            2251012136-Mai Chí Tôn
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="select-nav"><a href="">Trang chủ</a></div>
+        <div class="select-nav"><a href="">Các hãng xe</a>
+        <div class="select-nav-list">
+            <ul>
+                <li><a href="">Lamborghini </a></li>
+                <li><a href="">Honda </a></li>
+                <li><a href="">Toyota </a></li>
+                <li><a href="">Huyndai </a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <div class="box-images">
+                <img src="/IMG/Lamborred.jpg" alt="Lambor" class="imgcar">
+                <img src="/IMG/lamborblue.jpg" alt="Lambor" class="imgcar">
+                <img src="/IMG/lamboryellow.jpg" alt="Lambor" class="imgcar">
+                <img src="/IMG/lamborwhite.jpg" alt="Lambor" class="imgcar">
+            </div>
+        </div>
+        <div class="content">
+            <form id="myform" onsubmit="return Run();">
+                <table>
+                    <caption>THÔNG TIN ĐẶT HÀNG</caption>
+                    <tr>
+                        <td>Loại xe</td>
+                        <td><select name="cars" id="selection-xe">
+                            <option value="0" name="op" selected>Lamborghini</option>
+                            <option value="1" name="op">Ferrari</option>
+                        </select></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Số lượng</td>
+                        <td><input type="number" value="1" name="txtSoluong" id="quantity"></td>
+                    </tr>
+                    <tr>
+                        <td>Màu sắc</td>
+                        <td class="Select-color">
+                            <button type="button" value="red" class="color-box active" style="background-color: red;"></button>
+                            <button type="button" value="blue" class="color-box" style="background-color: blue;"></button>
+                            <button type="button" value="yellow" class="color-box" style="background-color: yellow;"></button>
+                            <button type="button" value="white" class="color-box" style="background-color: white;"></button>
+                        </td>
+                    </tr>
+                    <tr class="imagetd">
+                        <td colspan="2" align="center">
+                            <div id="image-container">
+                                <!-- Ảnh xuất ở đây -->
+                                <img src="/IMG/Lamborred.jpg" alt="" id="image-cars">
+                                
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" name="Dathang" value="Đặt hàng" id="order">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div id="Result"></div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="footer">Copyright 2022</div>
+
+    <script src="/JS/js1.js"></script>
+</body>
+</html>
